@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <title>Doctor Appointment Booking</title>
+  <link rel="stylesheet" href="bom.css">
+</head>
+<body>
+  <header>
+    <h1>CarePoint Clinic</h1>
+    <p>Book an appointment with a doctor</p>
+    <nav>
+      <a href="#doctors">Doctors</a>
+      <a href="#appointments">Appointment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="doctors">
+      <h2>Our Doctors</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Dr. Priya Sharma</h3>
+          <p><b>Specialty:</b> General Physician</p>
+          <p><b>Available:</b> Monday–Friday, 9:00 AM–1:00 PM</p>
+        </article>
+
+        <article class="card">
+          <h3>Dr. Arjun Rao</h3>
+          <p><b>Specialty:</b> Dentist</p>
+          <p><b>Available:</b> Monday–Saturday, 2:00 PM–6:00 PM</p>
+        </article>
+
+        <article class="card">
+          <h3>Dr. Meera Patel</h3>
+          <p><b>Specialty:</b> Dermatologist</p>
+          <p><b>Available:</b> Tuesday–Saturday, 10:00 AM–3:00 PM</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="appointments">
+      <h2>Request an Appointment</h2>
+      <form>
+        <p>
+          <label for="name">Patient name:</label><br>
+          <input type="text" id="name" name="name">
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+          <label for="phone">Phone number:</label><br>
+          <input type="tel" id="phone" name="phone">
+        </p>
+
+        <p>
+          <label for="doctor">Choose a doctor:</label><br>
+          <select id="doctor" name="doctor">
+            <option>Dr. Priya Sharma — General Physician</option>
+            <option>Dr. Arjun Rao — Dentist</option>
+            <option>Dr. Meera Patel — Dermatologist</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="date">Preferred date:</label><br>
+          <input type="date" id="date" name="date">
+        </p>
+
+        <p>
+          <label for="reason">Reason for visit:</label><br>
+          <textarea id="reason" name="reason" rows="4"></textarea>
+        </p>
+
+        <button type="submit">Request Appointment</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact the Clinic</h2>
+      <p>Phone: 98765 43210</p>
+      <p>Email: carepoint@example.com</p>
+      <p>Address: Main Road, Vijayawada</p>
+    </section>
+  </main>
+
+  <footer>CarePoint Clinic · Sample student project</footer>
+</body>
+</html>
